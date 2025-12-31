@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <p class="message">Selamat tahun baru.
+Terima kasih kepada seluruh insan yang telah hadir dan memberi warna dalam perjalanan ini. Terima kasih juga kepada mereka yang memilih bertahan hingga hari ini, meski tak selalu mudah. Semoga hal-hal baik terus menyertai langkah di tahun yang akan datang. Dan semoga setiap perjuangan yang dilalui tahun ini menjadi pintu pembuka bagi kebahagiaan serta kesuksesan di tahun-tahun berikutnya.</p>
+            <button class="button" onclick="window.open('https://ngl.link/az.morae', '_blank')">send me anonymous messages</button>
+            <audio id="bg-music" controls>
+                <source src="music.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+    <script>
+        // Minimal JS untuk memulai musik setelah interaksi pengguna (klik tombol play)
+        // Ini memastikan autoplay aman dan mematuhi kebijakan browser
+        const audio = document.getElementById('bg-music');
+        audio.addEventListener('play', () => {
+            // Opsional: Tambahkan efek jika diperlukan, tapi minimal
+        });
+    </script>
+</body>
+</html>
