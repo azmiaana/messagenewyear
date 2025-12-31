@@ -1,0 +1,102 @@
+/* Reset dasar untuk konsistensi */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body dengan background cokelat/coffee tone hangat */
+body {
+    font-family: 'Playfair Display', serif; /* Font elegan dari Google Fonts */
+    background: linear-gradient(135deg, #8B4513, #D2B48C, #F5DEB3); /* Gradien cokelat, cream, beige */
+    color: #5D4E37; /* Warna teks cokelat gelap untuk kontras elegan */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+/* Container utama untuk centering */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Konten utama dengan fade-in animation */
+.content {
+    text-align: center;
+    max-width: 600px;
+    padding: 40px;
+    background: rgba(245, 245, 220, 0.8); /* Beige transparan untuk efek premium */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Bayangan halus untuk elegan */
+    animation: fadeIn 2s ease-in-out; /* Animasi fade-in halus */
+}
+
+/* Animasi fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Teks pesan utama */
+.message {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-style: italic; /* Sedikit emosional dan aesthetic */
+    color: #8B4513; /* Cokelat untuk nuansa hangat */
+}
+
+/* Tombol NGL */
+.button {
+    background: #8B4513; /* Cokelat dominan */
+    color: #F5DEB3; /* Cream untuk kontras */
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-family: inherit;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background 0.3s ease, transform 0.2s ease; /* Transisi halus */
+}
+
+.button:hover {
+    background: #A0522D; /* Cokelat lebih gelap saat hover */
+    transform: scale(1.05); /* Efek premium */
+}
+
+/* Kontrol musik (audio element) */
+audio {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: rgba(245, 245, 220, 0.9); /* Beige untuk match tema */
+}
+
+/* Responsive untuk HP */
+@media (max-width: 768px) {
+    .content {
+        padding: 20px;
+        max-width: 90%;
+    }
+    .message {
+        font-size: 1.2rem;
+    }
+    .button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
